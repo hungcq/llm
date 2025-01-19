@@ -1,3 +1,4 @@
-/.env
+.env
 .idea
 *.iml
+openai/node_modules
