@@ -92,6 +92,6 @@ io.on('connection', async (socket) => {
 });
 
 // Start the server
-server.listen(8000, () => {
-  console.log('Server running on localhost:1918');
+server.listen(1918, () => {
+  console.log('Server running');
 });
