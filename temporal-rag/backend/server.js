@@ -50,7 +50,7 @@ io.on('connection', async (socket) => {
       const stream = openai.beta.threads.runs.stream(thread.id, {
         assistant_id: assistant.id,
       }).
-          on('textCreated', () => console.log('assistant >')).
+          on('textCreated', () => {}).
           on('toolCallCreated',
               (event) => console.log('assistant ' + event.type)).
           on('messageDone', async (event) => {
